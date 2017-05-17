@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         MixerBox+
-// @namespace    https://mb-plus.hpd.io
+// @namespace    https://github.com/happydenn/mixerbox-plus
 // @version      0.1
 // @description  Custom controls for MixerBox Web.
 // @author       happydenn
