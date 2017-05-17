@@ -31,7 +31,8 @@ if (process.env.NODE_ENV === 'production') {
     filename: 'mixerbox-plus.user.js',
   };
 
-  module.exports.devtool = '#source-map';
+  delete module.exports['devtool'];
+  // module.exports.devtool = '#source-map';
 
   module.exports.plugins = (module.exports.plugins || []).concat([
     new webpack.DefinePlugin({
