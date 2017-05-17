@@ -1,0 +1,19 @@
+{
+  "name": "mixerbox-plus",
+  "version": "0.3.0",
+  "description": "Custom controls for MixerBox Web.",
+  "repository": "https://github.com/happydenn/mixerbox-plus",
+  "author": "happydenn <happydenn@happydenn.net>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack --progress --hide-modules --watch",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-latest": "^6.24.1",
+    "cross-env": "^5.0.0",
+    "webpack": "^2.5.1"
+  }
+}
