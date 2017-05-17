@@ -10,6 +10,8 @@
 
 ## 安裝
 
+[**按這裡安裝/更新**](https://github.com/happydenn/mixerbox-plus/raw/master/mixerbox-plus.user.js)
+
 本 userscript 相容於各大瀏覽器以及各 script manager。請先在你的瀏覽器安裝 script manager 之後再將本 script 加入就可以啦！如果是使用 Chrome 的人推薦使用 [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=zh-TW)
 
 ## 關於
