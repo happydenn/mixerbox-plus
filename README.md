@@ -14,6 +14,14 @@
 
 本 userscript 相容於各大瀏覽器以及各 script manager。請先在你的瀏覽器安裝 script manager 之後再將本 script 加入就可以啦！如果是使用 Chrome 的人推薦使用 [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=zh-TW)
 
+## 使用效果
+
+### Before
+![](http://i.imgur.com/YlZAzH8.jpg)
+
+### After
+![](http://i.imgur.com/Ik32jcw.jpg)
+
 ## 關於
 
 本 script 目前是由小弟某天晚上想把 MixerBox 當成點唱機使用但是發現竟然沒辦法全螢幕播放因此產生的 tweak。
