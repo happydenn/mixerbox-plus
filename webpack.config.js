@@ -17,6 +17,10 @@ module.exports = {
         loader: 'babel-loader',
         exclude: /node_modules/,
       },
+      {
+        test: /\.(png|jpg|svg)$/,
+        loader: 'url-loader?limit=8192',
+      },
     ],
   },
   performance: {
@@ -32,7 +36,6 @@ if (process.env.NODE_ENV === 'production') {
   };
 
   delete module.exports['devtool'];
-  // module.exports.devtool = '#source-map';
 
   module.exports.plugins = (module.exports.plugins || []).concat([
     new webpack.DefinePlugin({
