@@ -13,13 +13,13 @@ export default function startPlayerIframeScript() {
         'start': 0,
         'enablejsapi': 1,
         'iv_load_policy': 3,
-        'origin': window.MB_DOMAIN_NAME
+        'origin': window.MB_DOMAIN_NAME,
       },
       events: {
         'onReady': window.onPlayerReady,
         'onStateChange': window.onPlayerStateChange,
-        'onError': window.onPlayerError
-      }
+        'onError': window.onPlayerError,
+      },
     });
 
     player = window.MBYTPlayer;
