@@ -1,8 +1,13 @@
 const fs = require('fs');
 const path = require('path');
 const webpack = require('webpack');
+const _ = require('lodash');
 
-const bannerText = fs.readFileSync('./banner.txt', 'utf-8');
+_.templateSettings.interpolate = /{{([\s\S]+?)}}/g;
+const bannerTemplateString = fs.readFileSync('./banner.txt', 'utf-8');
+const bannerText = _.template(bannerTemplateString)({
+  version: process.env.npm_package_version
+});
 
 module.exports = {
   entry: './src/index.js',
