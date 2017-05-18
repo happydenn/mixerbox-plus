@@ -1,5 +1,5 @@
-import startMixerBoxMainScript from './mixerbox-main';
-import startPlayerIframeScript from './player-iframe';
+import startMixerBoxMainScript from './main';
+import startPlayerIframeScript from './player';
 
 if (window.location.host.includes('cdn-network1.com')) {
   startPlayerIframeScript();

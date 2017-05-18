@@ -5,7 +5,7 @@ const webpack = require('webpack');
 const bannerText = fs.readFileSync('./banner.txt', 'utf-8');
 
 module.exports = {
-  entry: './src/mixerbox-plus.user.js',
+  entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, './dev'),
     filename: 'mixerbox-plus.user.js',
