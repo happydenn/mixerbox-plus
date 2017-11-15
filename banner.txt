@@ -7,4 +7,5 @@
 // @grant        none
 // @match        *://www.mixerbox.com/*
 // @match        *://spider1.cdn-network1.com/*
+// @match        *://webyoutubeplayer.blogspot.com/*
 // ==/UserScript==
