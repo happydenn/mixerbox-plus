@@ -1,8 +1,10 @@
 import startMixerBoxMainScript from './main';
 import startPlayerIframeScript from './player';
 
-if (window.location.host.includes('cdn-network1.com')) {
+const { host } = window.location
+
+if (host.includes('cdn-network1.com') || host.includes('webyoutubeplayer.blogspot.com')) {
   startPlayerIframeScript();
-} else if (window.location.host.includes('mixerbox.com')) {
+} else if (host.includes('mixerbox.com')) {
   startMixerBoxMainScript();
 }
