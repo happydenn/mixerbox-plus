@@ -4,7 +4,9 @@
 // @version      {{ version }}
 // @description  Custom controls for MixerBox Web.
 // @author       happydenn
-// @grant        none
+// @grant        GM_xmlhttpRequest
+// @grant        unsafeWindow
+// @connect      youtubemp3.to
 // @match        *://www.mixerbox.com/*
 // @match        *://spider1.cdn-network1.com/*
 // @match        *://webyoutubeplayer.blogspot.com/*

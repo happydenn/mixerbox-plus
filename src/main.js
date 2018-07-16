@@ -28,9 +28,9 @@ function detectPlaylistItems() {
       const imgEl = row.querySelector('.thumbnailContainer > img');
       const videoId = imgEl.src.match(/.+:\/\/i\.ytimg\.com\/vi\/(.+)\/hqdefault\.jpg/i)[1];
 
-      const titleEl = row.querySelector('.title');
-      const mp3Button = createDownloadMP3Button(videoId);
-      titleEl.appendChild(mp3Button);
+      // const titleEl = row.querySelector('.title');
+      // const mp3Button = createDownloadMP3Button(videoId);
+      // titleEl.appendChild(mp3Button);
     });
 
     playlist.classList.add('mbplus-annotated');
