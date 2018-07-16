@@ -1,8 +1,8 @@
 let player;
 
 export default function startPlayerIframeScript() {
-  window.onYouTubeIframeAPIReady = () => {
-    window.MBYTPlayer = new YT.Player('yt-player-div', {
+  unsafeWindow.onYouTubeIframeAPIReady = () => {
+    unsafeWindow.MBYTPlayer = new YT.Player('yt-player-div', {
       height: '100%',
       width: '100%',
       playerVars: {
@@ -13,16 +13,16 @@ export default function startPlayerIframeScript() {
         'start': 0,
         'enablejsapi': 1,
         'iv_load_policy': 3,
-        'origin': window.MB_DOMAIN_NAME,
+        'origin': unsafeWindow.MB_DOMAIN_NAME,
       },
       events: {
-        'onReady': window.onPlayerReady,
-        'onStateChange': window.onPlayerStateChange,
-        'onError': window.onPlayerError,
+        'onReady': unsafeWindow.onPlayerReady,
+        'onStateChange': unsafeWindow.onPlayerStateChange,
+        'onError': unsafeWindow.onPlayerError,
       },
     });
 
-    player = window.MBYTPlayer;
+    player = unsafeWindow.MBYTPlayer;
 
     player.addEventListener('onStateChange', (event) => {
       if (event.data === YT.PlayerState.PLAYING) {
